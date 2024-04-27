@@ -1,0 +1,15 @@
+.contact-groups-form-group {
+    display: flex;
+}
+
+.contact-groups-form-group:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.contact-groups-form-group input {
+    margin-right: 0.85em;
+}
+
+.contact-groups-form-group .btn-icon-remove {
+    margin-right: 0.15em;
+}

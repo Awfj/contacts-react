@@ -1,0 +1,18 @@
+.message {
+    color: rgba(0, 0, 0, .3);
+    font-size: var(--font-size-primary);
+    margin-top: -3.5em;
+}
+
+.accordion {
+    align-self: flex-start;
+    width: var(--header-width);
+    margin-top: 3.5em;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 640px) {
+    .accordion {
+        margin-top: 1.5em;
+    }
+}

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgba(0, 91, 254, 1);
+    --secondary-color: rgba(248, 17, 85, 1);
+    --background-color-primary: rgba(255, 255, 255, 1);
+    --background-color-secondary: rgba(246, 247, 249, 1);
+    --font-size-primary: 1.125em;
+    --font-size-secondary: 0.875em;
+    --header-width: 60.4vw;
+    --header-height: 4.375em;
+
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    background: rgba(246, 247, 249, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+@media only screen and (max-width: 1200px)  {
+    :root {
+        --header-width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    :root {
+        --header-width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    :root {
+        --font-size-primary: 0.9375em;
+        --font-size-secondary: 0.8125em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        --font-size-primary: 0.875em;
+        --font-size-secondary: 0.75em;
+    }
+}

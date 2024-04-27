@@ -1,0 +1,99 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 19.5em;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 101;
+}
+
+.sidebar-header,
+.sidebar-main {
+    padding: 1.5em;
+}
+
+.sidebar-main {
+    padding-bottom: 1.05em;
+}
+
+.sidebar-main {
+    flex-grow: 1;
+}
+
+.sidebar input,
+.sidebar select {
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 6px;
+    padding: 0.5em 0.85em;
+    border: none;
+    font-size: var(--font-size-secondary);
+    width: 100%;
+}
+
+.sidebar input:not(:first-child),
+.sidebar select {
+    margin-top: 1em;
+}
+
+.sidebar input::placeholder {
+    color: rgba(0, 0, 0, .5);
+}
+
+.sidebar-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-form-footer {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+/* BUTTONS */
+.btn-icon-close {
+    padding: 0.3em;
+}
+
+.btn-icon-close svg {
+    margin: auto;
+}
+
+.btn-icon-close .icon path {
+    fill: rgba(0, 0, 0, 1);
+}
+
+.btn-icon-close:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-form-footer button:not(:last-child) {
+    margin-right: 0.8em;
+}
+
+.btn-save {
+    background-color: var(--primary-color);
+}
+
+.btn-save:hover {
+    background-color: rgba(0, 71, 198, 1);
+}
+
+.sidebar-form-footer .btn-add {
+    color: var(--primary-color);
+}
+
+.btn-add:hover {
+    color: var(--background-color-primary);
+    background-color: #005BFE;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 640px) {
+    .sidebar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.icon {
+    display: block;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+/* SIDEBAR ANIMATION */
+.sidebar-animation-enter {
+    opacity: 0;
+}
+
+.sidebar-animation-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.sidebar-animation-exit {
+    opacity: 1;
+}
+
+.sidebar-animation-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+/* BUTTONS */
+.btn-text-icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn-text {
+    color: var(--background-color-primary);
+    font-size: var(--font-size-secondary);
+    font-weight: 700;
+    padding: 0.8em 1.05em;
+}
+
+.btn-bordered {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.btn-icon-edit,
+.btn-icon-remove {
+    width: 2.375em;
+    height: 2.375em;
+}
+
+.btn-icon-edit svg,
+.btn-icon-remove svg {
+    margin: auto;
+}
+
+.btn-icon-edit path,
+.btn-icon-remove path {
+    fill: rgba(0, 0, 0, .3);
+}
+
+.btn-icon-edit:hover path,
+.btn-icon-remove:hover path{
+    fill: var(--background-color-primary);
+}
+
+.btn-icon-edit:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-icon-remove:hover {
+    background-color: rgba(234, 61, 47, 1);
+}

@@ -22,7 +22,7 @@ function ContactGroups() {
         event.preventDefault();
         const newContacts = new Map();
         additionalFields.forEach((field) => {
-            if (field.value) {
+            if (field.value.trim()) {
                 let value = [];
                 if (contactGroups.has(field.originalKey)) {
                     value = contactGroups.get(field.originalKey);

@@ -17,7 +17,8 @@ function NewContact() {
 
     const isNameValid = (name) => {
         const nameRegex = /^[а-яА-Я\s-]+$/;
-        return nameRegex.test(name);
+        const nameWithoutSpacesOrHyphens = name.replace(/[\s-]/g, '');
+        return nameRegex.test(name) && nameWithoutSpacesOrHyphens.length > 0;
     };
 
     const isPhoneValid = (phone) => {
@@ -28,7 +29,7 @@ function NewContact() {
         event.preventDefault();
 
         if (!isNameValid(name)) {
-            setErrorMessage('Имя введено некорректно. Можно использовать только буквы, пробелы и дефисы.');
+            setErrorMessage('Имя введено некорректно. Можно использовать только русские буквы, пробелы и дефисы.');
             return;
         }
 
